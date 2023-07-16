@@ -1,6 +1,7 @@
 <template>
     <div>
       <div class="message_holder" v-for="message in messageList" :key="message.id">
+        <p class="username">{{ message.username }}</p>
         <p class="messages">{{ message.content }}</p>
         <p class="created">{{ message.created_at }}</p>
       </div>
