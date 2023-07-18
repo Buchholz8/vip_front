@@ -40,7 +40,7 @@ export default {
           group_id: cookies.get('group_id')
         }
       }).then((response) => {
-        console.log(response)
+        response;
         this.members = response.data;
       }).catch((error) => {
         console.log(error);

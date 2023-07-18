@@ -3,7 +3,7 @@
       <div class="user-info">
         <img :src="user.profile_img" :alt="user.username + ' Profile Image'" />
         <div>
-          <p>{{ user.username }}</p>
+          <h1>{{ user.username }}</h1>
           <p>Created At: {{ user.created_at }}</p>
         </div>
       </div>
@@ -53,7 +53,7 @@
     background-position: center;
     color: white;
     padding: 20px;
-    font-size: 26px;
+    font-size: 20px;
   }
   
   .user-info {

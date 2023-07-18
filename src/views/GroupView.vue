@@ -3,7 +3,7 @@
         <group-info></group-info>
         <div class="body">
             <group-members></group-members>
-        <group-messages></group-messages>
+            <group-messages></group-messages>
         </div>
     </div>
 </template>
@@ -12,7 +12,21 @@
 import GroupInfo from '@/components/GroupInfo.vue'
 import GroupMembers from '@/components/GroupMembers.vue'
 import GroupMessages from '@/components/GroupMessages.vue';
+
+import cookies from 'vue-cookies'
     export default {
+        mounted() {
+        if (cookies.get('token') === null) {
+            this.$router.push('/');
+        }
+    },
+
+
+
+
+
+
+
     name: 'GroupView',
   components: {
     GroupMembers,

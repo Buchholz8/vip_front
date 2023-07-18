@@ -42,7 +42,7 @@
               member_id: cookies.get('user_id')}
           })
           .then((response) => {
-            console.log(response)
+            response;
             this.groups = response.data;
           })
           .catch((error) => {
