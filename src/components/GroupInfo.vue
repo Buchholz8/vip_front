@@ -39,7 +39,7 @@
             }
           })
           .then((response) => {
-            console.log(response)
+            response;
             this.group = response.data
           })
           .catch((error) => {

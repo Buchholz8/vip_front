@@ -14,6 +14,7 @@
                 <friends-comp></friends-comp>
             </div>
         </div>
+        <footer-comp></footer-comp>
     </div>
 </template>
 
@@ -24,6 +25,7 @@ import GroupJoin from '@/components/GroupJoin.vue'
 import UserGroups from '@/components/UserGroups.vue'
 import LogoutComp from '@/components/LogoutComp.vue'
 import FriendsComp from '@/components/FriendsComp.vue'
+import FooterComp from '@/components/FooterComp.vue'
 export default {
     name: 'HomeView',
     components: {
@@ -31,8 +33,9 @@ export default {
         GroupJoin,
         UserGroups,
         LogoutComp,
-        FriendsComp
-    },
+        FriendsComp,
+        FooterComp
+        },
     mounted() {
         if (cookies.get('token') === null) {
             this.$router.push('/');

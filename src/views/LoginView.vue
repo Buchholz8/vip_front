@@ -1,16 +1,19 @@
 <template>
   <div class="home">
     <login-comp class="login"></login-comp>
+    <footer-comp></footer-comp>
   </div>
 </template>
 
 <script>
 import LoginComp from '@/components/LoginComp.vue';
+import FooterComp from '@/components/FooterComp.vue'
 
 export default {
   name: 'loginView',
   components: {
     LoginComp,
+    FooterComp
   },
 }
 </script>

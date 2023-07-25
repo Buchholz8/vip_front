@@ -46,7 +46,7 @@
             },
           })
           .then((response) => {
-            console.log(response);
+            response;
             cookies.set('member_id' , response.data[0][0])
           })
           .catch((error) => {
@@ -59,7 +59,7 @@
             url: 'http://127.0.0.1:5000/api/groups',
             method: 'POST',
             data: {
-              owner_id: cookies.get('client_id'),
+              owner_id: cookies.get('user_id'),
               banner_img: this.$refs.banner.value,
               description: this.$refs.description.value,
               name: this.$refs.name.value,
